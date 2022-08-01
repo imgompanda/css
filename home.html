@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link rel="shortcut icon" href="https://nomadcoders.co/" />
+    <title>
+      Home - My first website
+    </title>
+    <link href="styles.css" rel="stylesheet"/>
+    <style>
+      * {
+        border: 2px sFolid black;
+      }
+
+
+      h1 {
+        color: rgb(100, 130, 238);
+        font-weight: 200;
+        font-size: 50px;
+        
+      }
+      body {
+    
+        height: 100vh;
+        width: 100vh;
+        padding: 20px 10px;
+        background-color: thistle;
+        text-align: center;
+        margin: 50px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      
+        
+    } 
+
+      form {
+        height: 100px;
+        width: 500px;
+        position: absolute;
+        
+      }
+      div {
+        padding: 10px;
+      }
+      
+      #first {
+        background-color: yellow;
+        width: 150px;
+        height: 150px;
+      }
+      #second {
+        background-color: aqua;
+        width: 100px;
+        height: 100px;
+      }
+      #third {
+        background-color: coral;
+        width: 50px;
+        height: 50px;
+      }
+      #fourth {
+        background-color: blue;
+        width: 25px;
+        height: 25px;
+      }
+
+      html {
+        background-color: red;
+      }
+      .btn {
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .teal {
+        background-color: teal;
+      }
+      .tomato {
+        background-color: tomato;
+        color: white;
+      }
+
+      .dp {
+        width: 50px;
+        height: 50px;
+        background-color: teal;
+      }
+      
+     div:first-child {
+      background-color: white;
+     }
+
+     div:last-child {
+      background-color: yellow;
+     }
+
+     span {
+      background-color: greenyellow;
+      padding: 5px;
+      border-radius: 10px;
+     }
+
+     p span {
+      color: teal;
+     }
+
+     div > span {
+      text-decoration: underline;
+     }
+
+     button:focus {
+      background-color: tomato;
+     }
+    </style>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is my website" />
+
+     
+  </head>
+  
+ <button>hello</button>
+
+  <body>
+    <div>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+      </form>
+      <span>
+        hello
+      </span>
+      <p>
+        언제가 <span> 코딩왕 </span>이 될 남자
+      </p>
+    </div>
+
+    <div id="first">
+      <div id="second">
+        <div id="third">
+          <div id="fourth">
+            <span>hello</span>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <div class="dp"></div>
+    <div class="dp"></div>
+    <div class="dp"></div>
+    
+    <span class="btn teal">hello</span>
+    <span class="btn tomato">hello</span>
+    <span class="btn teal">hello</span>
+    <span class="btn tomato">hello</span>
+    <span class="btn tomato">hello</span>
+
+    <h1>YAFILX</h1>
+    <p>My name is <abbr title="Park Hyung Woo">PHW</abbr></p>
+    <code>Hello!</code>
+    <p>I like to live in <sub>South Korea</sub></p>
+
+    <form>
+      <div style="margin: 0 auto;">
+      <label for="profile">Profile photo</label>
+      <input id="profile" type="file" accept="image/*" />
+      
+      <label for="name">First Name</lable>
+      <input id="name" required placeholder="Name" type="text" />
+     
+      <input required placeholder="Last Name" type="text" />
+      <input required placeholder="Nickname" type="text" />
+      
+      <input required placeholder="Password" minlength="10" type="password" />
+      <input type="submit" value="Create Account" />
+      
+      <label for="website">Website</label>
+      <input id="website" required placeholder="Name" type="date" />
+      </div>
+    
+    </form>
+    <header>
+      <h1>
+        HELLOW!
+      </h1>
+    </header>
+    <main>
+      <p>hello!</p>
+    </main>
+    <footer>
+      &copy;2022 H.W
+    </footer>
+    <span>
+      hello!
+    </span>
+  </body>
+</html>

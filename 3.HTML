@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="Korea">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <style>
+    body {
+      height: 1000vh;
+      margin: 50px;
+    }
+    form {
+      border: 5px solid black;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    span {
+      background-color: yellowgreen;
+      padding: 5px;
+      border-radius: 10px;
+    }
+
+    /* placeholder만 꾸미고 싶을 때 */
+    input::placeholder {
+      color: blue;
+    }
+    /* selection 마우스로 선택하거나 드래그하면 작동 */
+    p::selection {
+      background-color: yellowgreen;
+      color: white;
+    }
+    /* 마우스를 올려 놓으면 변함 */
+    button:hover {
+      background-color: rgb(236, 169, 62);
+    }
+
+    /* 마우스를 클릭 하면 변함 */
+    button:active {
+      background-color: rgb(177, 217, 146);
+    }
+
+    /* 마우스나 키보드로 선택 하면 변함 */
+    button:focus {
+      background-color: rgb(255, 78, 9);
+    }
+
+    /* focus 상태인 자식의 부모 엘리먼트에 적용 */
+    button:focus-within {
+      color: rgb(255, 78, 9);
+    }
+
+    /* 클릭했거나 방문했던 적이 있는 링크에 적용*/
+    a:visited {
+      color: rgb(177, 217, 146);
+    }
+  </style>
+  <body>
+    <div>
+      <form>
+        <input type="text" placeholder="name" />
+
+        <p>응 어쩔티비 저쩔팁이</p>
+
+        <button>누르면 바보</button>
+
+        <a href="https://okky.kr/articles/life">GO TO OKKY</a>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="Korea">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <style>
+    input {
+      border-radius: 7px;
+    }
+    input:focus {
+      background-color: tomato;
+    }
+
+    a:visited {
+      color: tomato;
+    }
+    a:hover {
+      color: teal;
+    }
+    a:focus {
+      color: turquoise;
+    }
+
+    form {
+      border: 1px solid salmon;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    input:focus-within {
+      border-color: seagreen;
+    }
+
+    form:hover input:focus {
+      background-color: sienna;
+    }
+  </style>
+  <body>
+    <div>
+      <input type="text" />
+      <input type="text" />
+
+      <a href="https://apple.com">Go to Apple</a>
+
+      <form>
+        <input type="text" name="" id="" />
+        <input type="text" name="" id="" />
+        <input type="text" name="" id="one" />
+      </form>
+    </div>
+  </body>
+</html>
