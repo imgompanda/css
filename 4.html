@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /*  root를 사용하여 변수를 지정할 수 있다. */
+    :root {
+      --main-color: #28261e;
+      --default-border: 1px solid var(--main-color);
+    }
+    /* ::placeholder placehoder를 스타일 디자인 */
+    input::placeholder {
+      color: slateblue;
+      border: var(--default-border);
+    }
+    /* 텍스트를 드래그하면 작동함 */
+    p::selection {
+      background-color: yellowgreen;
+      color: var(--main-color);
+    }
+  </style>
+  <body>
+    <form>
+      <input type="text" placeholder="name" />
+    </form>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+      reiciendis maiores autem accusamus quia? Voluptatum consequatur illum ab,
+      tenetur quia distinctio, reprehenderit voluptate cumque corrupti tempora
+      natus. Cumque, soluta et!
+    </p>
+  </body>
+</html>
