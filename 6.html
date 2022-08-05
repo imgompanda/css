@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css2</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    div {
+      background-color: teal;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media screen and (max-width: 600px) {
+      div {
+        background-color: tomato;
+      }
+    }
+    @media screen and (min-width: 601px) and (max-width: 1200px) and (orientation: landscape) {
+      div {
+        background-color: blue;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      div {
+        background-color: wheat;
+      }
+    }
+    span {
+      font-size: 38px;
+    }
+    @media screen and (orientation: landscape) {
+      span {
+        display: none;
+      }
+    }
+  </style>
+  <body>
+    <div></div>
+    <span>plz filp your phone :(</span>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+    @keyframes supersexycoinflip {
+      0% {
+        transform: rotateX(0);
+      }
+      25% {
+        transform: scale(2);
+      }
+      50% {
+        border-radius: 2px;
+        transform: rotateX(180deg) translateX(100px);
+        border-color: tomato;
+      }
+      75% {
+        transform: scale(2);
+        border-radius: 2px;
+      }
+      100% {
+        transform: rotateX(0);
+      }
+    }
+
+    a {
+      color: white;
+      background-color: tomato;
+      text-decoration: none;
+      padding: 3px 5px;
+      border-radius: 5px;
+      font-size: 55px;
+      /* transition 애니메이션 효과 */
+      transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    a:hover {
+      border-radius: 20px;
+      color: tomato;
+      background-color: wheat;
+    }
+
+    img {
+      border: 5px solid black;
+      border-radius: 50%;
+      width: 200px;
+      animation: supersexycoinflip 5s ease-in-out infinite;
+    }
+
+    img:hover {
+      transform: rotatex(360deg) scale(0.5);
+    }
+  </style>
+  <body>
+    <a href="#">Go home</a>
+    <img src="모코코.jpg" />
+  </body>
+</html>
