@@ -1,0 +1,35 @@
+body {
+  background-color: tomato;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#box1 {
+  border: 2px solid black;
+  background-color: wheat;
+  padding: 5px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#box3 {
+  border: 3px dashed white;
+  background-color: teal;
+  width: 220px;
+  height: 50px;
+}
+
+.normalbox {
+  background-color: teal;
+  border: 3px solid white;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+}
