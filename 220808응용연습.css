@@ -1,0 +1,153 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: antiquewhite;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* nth-child를 활용해 class를 사용하지 않고 지정 할 수 있다. */
+#fathers1 {
+  background-color: tomato;
+}
+
+#fathers1:hover {
+  background-color: white;
+  border: 7px solid tomato;
+}
+
+#fathers1:hover > #colorname1 {
+  background-color: tomato;
+  outline: 0.1px solid tomato;
+  color: white;
+  top: 0px;
+  height: 350px;
+  animation-name: pullUp;
+
+  animation-duration: 2s;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#fathers2 {
+  background-color: teal;
+}
+
+#fathers2:hover {
+  background-color: white;
+  border: 7px solid teal;
+}
+
+#fathers2:hover > #colorname2 {
+  background-color: teal;
+  outline: 0.1px solid teal;
+  color: white;
+  top: 0px;
+  height: 350px;
+  animation-name: pullUp;
+
+  animation-duration: 2s;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#fathers3 {
+  background-color: burlywood;
+}
+
+#fathers3:hover {
+  background-color: white;
+  border: 7px solid burlywood;
+}
+
+#fathers3:hover > #colorname3 {
+  background-color: burlywood;
+  outline: 0.1px solid burlywood;
+  color: white;
+  top: 0px;
+  height: 350px;
+  animation-name: pullUp;
+
+  animation-duration: 2s;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#fathers4 {
+  background-color: thistle;
+}
+
+#fathers4:hover {
+  background-color: white;
+  border: 7px solid thistle;
+}
+
+#fathers4:hover > #colorname4 {
+  background-color: thistle;
+  outline: 0.1px solid thistle;
+  color: white;
+  top: 0px;
+  height: 350px;
+  animation-name: pullUp;
+
+  animation-duration: 2s;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#ui-box {
+  display: grid;
+  /* repeat(n, nfr) n열 n행 */
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+div [id^="fathers"] {
+  width: 150px;
+  height: 350px;
+  border: 7px solid white;
+  border-radius: 10px;
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+div [id^="colorname"] {
+  font-size: 20px;
+  background-color: white;
+  position: relative;
+  top: 20px;
+  /* 아웃라인은 div 사이의 공백을 없애기 위해 추가했다. */
+  outline: 0.1px solid white;
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  width: 153px;
+  height: 60px;
+}
+
+@keyframes pullUp {
+  0% {
+    transform: scaleY(1);
+  }
+  40% {
+    transform: scaleY(1.02);
+  }
+  60% {
+    transform: scaleY(0.98);
+  }
+  80% {
+    transform: scaleY(1.01);
+  }
+  100% {
+    transform: scaleY(0.98);
+  }
+  80% {
+    transform: scaleY(1.01);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
