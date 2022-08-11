@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa talk</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <i class="fa-solid fa-wifi"></i>
+        <!--To Do: wifi icon -->
+      </div>
+      <div class="status-bar__column"><span>18:43</span></div>
+
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+        <!-- batterty icon -->
+        <i class="fa-solid fa-bolt"></i>
+        <!-- lightning icon -->
+      </div>
+    </div>
+    <div>
+      <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to Kokoa Talk</h1>
+        <p class="welcome-header__text">
+          If you have a Kokoa Account, log in with your email or phone number
+        </p>
+      </header>
+
+      <form id="login-form">
+        <input type="text" placeholder="Email or Phone number" />
+        <input type="password" placeholder="password" />
+        <input type="submit" value="Log in" />
+        <a href="#">Find Kokoa Account or Password</a>
+      </form>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/fb2029e64e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
